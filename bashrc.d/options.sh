@@ -9,4 +9,6 @@ if [ -x /usr/bin/nerdfetch ]; then
     echo # To pad, or not to pad?
 fi
 
+export PATH="$PATH:/usr/lib/python3.12:/home/eliss/scripts/fmake"
+
 set vi -o
