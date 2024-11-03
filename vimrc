@@ -1,7 +1,22 @@
-set history=500
+set nocompatible
+filetype off
 
-filetype plugin on
-filetype indent on
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'sainnhe/sonokai'
+
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+call vundle#end()
+filetype plugin indent on
+PluginInstall
+
+set history=500
 
 set autoread
 au FocusGained,BufEnter * silent! checktime
@@ -74,7 +89,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme sonokai
 catch
 endtry
 
