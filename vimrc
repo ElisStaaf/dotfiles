@@ -14,7 +14,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 call vundle#end()
 filetype plugin indent on
-PluginInstall
 
 set history=500
 
