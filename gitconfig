@@ -5,7 +5,6 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [user]
-	email = staaf.elis@gmail.com
 	name = eliss
 [core]
 	editor = nvim
