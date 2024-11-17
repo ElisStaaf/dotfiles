@@ -4,8 +4,8 @@ else
     EDITOR="vim"
 fi
 
-if [ -x /usr/bin/nerdfetch ]; then
-    nerdfetch
+if [ -x /usr/bin/fastfetch ]; then
+    fastfetch
     echo # To pad, or not to pad?
 fi
 
