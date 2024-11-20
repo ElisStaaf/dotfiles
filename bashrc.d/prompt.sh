@@ -3,7 +3,8 @@ git_branch() {
 }
 YELLOW="\[\033[0;33m\]"
 PURPLE="\[\033[0;35m\]"
+GREEN="\[\033[0;32m\]"
 BLUE="\[\033[1;34m\]"
 RESET_COLOR="\[\033[0;0m\]"
 
-PS1="$RESET_COLOR[$PURPLE\u@\h$RESET_COLOR:$BLUE\w$YELLOW\$(git_branch)$RESET_COLOR]\$ "
+PS1="$GREEN[\u@\h$RESET_COLOR:$BLUE\w$YELLOW\$(git_branch)$GREEN]\$$RESET_COLOR "
