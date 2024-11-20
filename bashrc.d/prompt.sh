@@ -1,6 +1,7 @@
 git_branch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
+
 YELLOW="\[\033[0;33m\]"
 PURPLE="\[\033[0;35m\]"
 GREEN="\[\033[0;32m\]"
