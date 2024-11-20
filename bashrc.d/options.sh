@@ -6,7 +6,7 @@ fi
 
 if [ -x /usr/bin/fastfetch ]; then
     fastfetch
-    echo # To pad, or not to pad?
+    echo
 fi
 
 export PATH="$PATH:/usr/lib/python3.12"
