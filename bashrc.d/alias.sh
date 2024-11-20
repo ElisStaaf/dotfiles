@@ -36,3 +36,7 @@ alias sth="git stash"
 alias lg="git log"
 alias u="git add -u"
 alias all="git add ."
+
+if [ -x /usr/bin/lazygit ]; then
+    alias lgit="lazygit" # Lazygit is awesome btw
+fi
