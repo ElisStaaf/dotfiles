@@ -6,6 +6,10 @@ mkcd () {
     mkdir -p -- "$1" && cd -P -- "$1" 2> /dev/null
 }
 
+rmpwd () {
+    cd .. && rm -rf $(cd -)
+}
+
 extract () {
   if [ -f "$1" ] ; then
     case "$1" in
