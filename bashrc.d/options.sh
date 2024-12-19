@@ -9,5 +9,4 @@ if [ -x /usr/bin/fastfetch ]; then
     echo
 fi
 
-export PATH="$PATH:/usr/lib/python3.12"
 set vi -o
