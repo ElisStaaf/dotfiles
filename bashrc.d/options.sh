@@ -3,6 +3,7 @@ if [ -x /usr/bin/nvim ]; then
 else
     EDITOR="vim"
 fi
+export EDITOR
 
 if [ -x /usr/bin/fastfetch ]; then
     fastfetch
