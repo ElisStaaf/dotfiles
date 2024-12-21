@@ -1,8 +1,10 @@
 test -z "$PROFILEREAD" && . /etc/profile || true
+
 export EDITOR=/usr/bin/nvim
 export NEWSSERVER=your.news.server
-if [ -x /usr/bin/fortune ] ; then
+
+if [ -x /usr/bin/fortune ] && [ -x /usr/bin/cowsay ]; then
     echo
-    /usr/bin/fortune
+    fortune | cowsay
     echo
 fi
