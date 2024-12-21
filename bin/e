@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+# Simple shortcut to open
+# a file in users favourite
+# editor. Easy to use.
+#     e main.c
+# and
+#     e
+# Are both valid.
+
+exec "$EDITOR" "${1:-.}"

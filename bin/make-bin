@@ -1,0 +1,15 @@
+#!/usr/bin/sh
+# USAGE: make-bin
+# Script to make all
+# of the compiled
+# scripts into machine
+# code.
+
+for rc in ~/bin/*; do
+    if [ -f $rc ]; then
+        case $rc in
+            *.go)
+                go build $rc
+                ;;
+        esac
+    fi
