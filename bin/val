@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+# USAGE: val <args>
+# Script to evaluate
+# expressions in python,
+# since bash is trash at
+# that.
+
+from sys import argv as args
+
+def main(argc: int, argv: list[str]) -> None:
+    if argc <= 1:
+        print("USAGE: val <args>")
+        return
+    try:
+        print(eval(" ".join(argv[1:])))
+    except Exception:
+        print("-val: python3 exception")
+
+if __name__ == "__main__":
+    main(len(args), args)
