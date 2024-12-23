@@ -13,3 +13,4 @@ for rc in ~/bin/*; do
                 ;;
         esac
     fi
+done
