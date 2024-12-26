@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import sys
+
+def cloc(filename: str) -> list[str]:
+    with open(filename, "r") as file:
+        fread: list[str] = file.readlines()
+        file.close()
+    return fread
+
+def main() -> None:
+    if (len(sys.argv) <= 1):
+        print("USAGE: pyloc <file>")
+        return
+    print(len(cloc(sys.argv[1]))
