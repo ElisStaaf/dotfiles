@@ -13,3 +13,6 @@ def main() -> None:
         print("USAGE: pyloc <file>")
         return
     print(len(cloc(sys.argv[1])))
+
+if __name__ == "__main__":
+    main()
