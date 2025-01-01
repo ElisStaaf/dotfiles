@@ -11,3 +11,4 @@ if [ -x /usr/bin/fastfetch ]; then
 fi
 
 set vi -o
+export PATH="$PATH:/home/eliss/.local/share/gem/ruby/3.2.0/bin"
